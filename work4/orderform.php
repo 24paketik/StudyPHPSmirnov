@@ -4,8 +4,8 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0' charset='utf-8'> 
     </head> 
     <body> 
-        <h1>Магазин "Автозапчасти"</h1> 
-        <h2>Форма заказа</h2> 
+        <h1>Информация о студентах</h1> 
+        <h2>Форма добваления студента</h2> 
         <form action="processorder.php" method=post> 
             <table border=0> 
                 <tr bgcolor=#cccccc> 
@@ -13,13 +13,13 @@
                 <td width=15>Информация
                 <tr> 
                 <td>учебная группа
-                <td align=left><input type="text" name="YchGr" size=3 maxlength=3> 
+                <td align=left><input type="text" name="YchGr" size=40 maxlength=40> 
                 <tr> 
                 <td>ФИО студента
-                <td align=left><input type="text" name="FIOst" size=3 maxlength=3> 
+                <td align=left><input type="text" name="FIOst" size=40 maxlength=40> 
                 <tr> 
                 <td>Дата рождения
-                <td align=left><input type="text" name="DataR" size=3 maxlength=3> 
+                <td align=left><input type="Date" name="DataR" size=40 maxlength=40> 
                 <tr> 
                 <td>Пол студента
                 <td align=center><input type="text" name="gender" size=40 maxlength=40> 

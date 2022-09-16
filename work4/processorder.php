@@ -17,34 +17,11 @@
             echo '<p>Информация обработан '; 
             echo $date; 
             echo '</p>'; 
-            echo '<p>Список введёной информации о студенте: </p>';
-            if( $totalqty == 0) 
-                { 
-                    echo 'Вы ничего не заказали на предыдущей странице!<br />'. 
-                    "<p><a href='orderform.php'>Оформить заказ</a></body></html>"; 
-                    exit; 
-                } 
-            else 
-                { 
-                    if ( $YchGr>0 ) 
-                        echo $YchGr.' Учебная группа <br />'; 
-                    if ( $oilqty>0 ) 
-                        echo $oilqty.' бутылок с маслом<br />'; 
-                    if ( $sparkqty>0 ) 
-                        echo $sparkqty.' свечей зажигания<br />'; 
-                } 
             $totalamount = 0.00; 
             define('TIREPRICE', 100); 
             define('OILPRICE', 10); 
-            define('SPARKPRICE', 4); 
-            $totalamount = 
-            $tireqty*TIREPRICE+$oilqty*OILPRICE+$sparkqty*SPARKPRICE; 
-            $totalamount=number_format($totalamount, 2, '.', ' '); 
-            echo '<p>Итого по заказу: '.$totalamount.'</p>'; 
-            echo '<p>Адрес доставки: '.$address.'</p>'; 
-            $outputstring = $date."\t".$tireqty." автопокрышек\t".$oilqty. 
-            " бутылок с маслом\t".$sparkqty. 
-            " свечей зажигания\t\$".$totalamount."\t".$address."\n"; 
+            define('SPARKPRICE', 4);  
+            $outputstring = $date." ФИО: ".$FIOst." Учебная группа: ".$YchGr." Дата рождения: ".$DataR." Пол: ".$gender." Номер зачётки: ".$NumZach." Паспорт: ".$Pass. "\n";
             @ $fp = fopen("orders.txt", 'ab'); 
             if (!$fp) 
                 { 
