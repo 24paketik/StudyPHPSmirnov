@@ -14,13 +14,9 @@
             $NumZach = $_POST['NumZach']; 
             $Pass = $_POST['Pass']; 
             $date = date('H:i, d.m.Y'); 
-            echo '<p>Информация обработан '; 
+            echo '<p>Информация обработана '; 
             echo $date; 
-            echo '</p>'; 
-            $totalamount = 0.00; 
-            define('TIREPRICE', 100); 
-            define('OILPRICE', 10); 
-            define('SPARKPRICE', 4);  
+            echo '</p>';  
             $outputstring = $date." ФИО: ".$FIOst." Учебная группа: ".$YchGr." Дата рождения: ".$DataR." Пол: ".$gender." Номер зачётки: ".$NumZach." Паспорт: ".$Pass. "\n";
             @ $fp = fopen("orders.txt", 'ab'); 
             if (!$fp) 

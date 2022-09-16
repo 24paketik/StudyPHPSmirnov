@@ -10,6 +10,7 @@
             <dt><a href="work2.php">Работа 2 - Версия PHP</a></dt>
             <dt><a href="../work3/index.php">Работа 3 - Версия PHP</a></dt>
             <dt><a href="../work4/index.php">Работа 4 - Версия PHP</a></dt>
+            <dt><a href="../work5/index.php">Работа 5 - Версия PHP</a></dt>
             <dd>Вызывается функция phpinfo, которая возвращает информацию об интерпретаторе PHP, установленном в данном HTTP-сервере.</dd> 
         </dl> 
     </body>

@@ -56,7 +56,7 @@
                 } 
             fwrite($fp, $outputstring, strlen($outputstring)); 
             fclose($fp); 
-            echo '<p>Заказ записан.</p>'; 
+            echo '<p>Студент записан.</p>'; 
         ?> 
         <p><a href='index.php'>Просмотр заказов</a> 
     </body> 
