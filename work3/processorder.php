@@ -21,8 +21,8 @@
             echo 'Заказано товаров: '.$totalqty.'<br />'; 
             if( $totalqty == 0) 
                 { 
-                    echo 'Вы ничего не заказали на предыдущей странице!<br />'. 
-                    "<p><a href='orderform.php'>Оформить заказ</a></body></html>"; 
+                    echo 'Вы ничего не заказали на предыдущей странице!<br/>'.
+                    "<p> <a href='orderform.php'>Оформить заказ</a></body></html>"; 
                     exit; 
                 } 
             else 
