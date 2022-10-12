@@ -21,19 +21,18 @@
 $select_note = mysqli_query($link, $query);
 while ($note = mysqli_fetch_array($select_note))
 {
-echo $note ['id'], "<br>";
-echo $note ['created'], "<br>";
-while ($note = mysqli_fetch_array($select_note)){
-    echo $note['id'], "<br>";
-    ?>
-    <a href="comments.php?note=<?php echo $note['id']; ?>">
-    <?php echo $note ['title'], "<br>";?></a>
-    
-    <?php
-     echo $note ['created'], "<br>";
-    echo $note ['article'], "<br>";
-    }
-echo $note ['article'], "<br>";
+    echo $note ['id'], "<br>";
+    echo $note ['created'], "<br>";
+    while ($note = mysqli_fetch_array($select_note)){
+        echo $note['id'], "<br>";
+        ?>
+        <a href="comments.php?note=<?php echo $note['id']; ?>">
+        <?php echo $note ['title'], "<br>";?></a>
+        
+        <?php
+        echo $note ['created'], "<br>";
+        echo $note ['qrticle'], "<br>";
+        }
 }
     ?>
 </html>
